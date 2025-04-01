@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
 
-const API_URL = 'https://mycrudapp-api-e3ebgpf5gpbsfdgt.centralus-01.azurewebsites.net/api/Users';
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   const [users, setUsers] = useState([]);

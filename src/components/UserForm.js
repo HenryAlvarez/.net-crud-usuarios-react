@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API_URL = 'https://mycrudapp-api-e3ebgpf5gpbsfdgt.centralus-01.azurewebsites.net/api/Users';
+const API_URL = process.env.REACT_APP_API_URL;
 
 function UserForm({ onUserSaved, editingUser, onCancelEdit }) {
     const [name, setName] = useState('');
